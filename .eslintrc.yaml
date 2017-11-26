@@ -1,0 +1,63 @@
+---
+extends: airbnb
+plugins:
+- react
+- '@armstead/custom-rules'
+env:
+  browser: true
+  mocha: true
+  node: true
+parserOptions:
+  ecmaVersion: 8
+  sourceType: module
+  ecmaFeatures:
+    jsx: true
+    modules: true
+globals:
+  document: false
+  expect: false
+  mock: false
+  mount: false
+  navigator: false
+  reducers: false
+  reduxStore: false
+  render: false
+  sandbox: false
+  shallow: false
+  window: false
+parser: babel-eslint
+rules:
+  react/jsx-filename-extension: 0
+  import/imports-first: 0
+  no-underscore-dangle: 0
+  react/prop-types: 0
+  react/prefer-stateless-function:
+  - 2
+  - ignorePureComponents: true
+  semi:
+  - 2
+  - never
+  comma-dangle:
+  - 2
+  - never
+  react/jsx-curly-spacing:
+  - 2
+  - always
+  - allowMultiline: true
+  func-style:
+  - 2
+  - declaration
+  - allowArrowFunctions: true
+  react/jsx-no-bind: 2
+  react/sort-comp: 2
+  no-param-reassign:
+  - 2
+  - props: false
+  no-return-assign: 0
+  import/no-extraneous-dependencies:
+  - 2
+  - devDependencies: true
+  '@armstead/custom-rules/class-kebab':
+  - 2
+  '@armstead/custom-rules/id-camel':
+  - 2

@@ -1,0 +1,43 @@
+footer
+  padding-top 20px
+  position fixed
+  background-color #fff
+  border-top 1px solid #8c8c8c
+  width 100%
+  bottom 0
+  ul
+    padding 0
+    li
+      float left
+      list-style none
+      width 20%
+      a
+        display block
+        text-align center
+        text-decoration none !important
+        &:hover
+          text-decoration none
+        .icons
+          font-size 32px
+          color #8c8c8c
+        div
+          color #8c8c8c
+      .active
+        div
+          color #e02e2e
+          
+  .active .icon-videos-outlined:before
+    content: "\e90b"
+    color #e02e2e
+  .active .icon-network-outlined:before
+    content: "\e90d"
+    color #e02e2e
+  .active .icon-notifications-outlined:before
+    content: "\e90f"
+    color #e02e2e
+  .active .icon-settings:before
+    content: "\e911"
+    color #e02e2e
+  .active .icon-user-outlined:before
+    content: "\e913"
+    color #e02e2e

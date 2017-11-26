@@ -1,0 +1,156 @@
+.setting-page
+  padding-top 60px
+  background-color #f9f9f9
+  .switch
+    position relative
+    display inline-block
+    width 60px
+    height 34px
+    margin 0 auto
+    display block
+    input
+      display none
+    .slider
+      position absolute
+      cursor pointer
+      top 0
+      left 0
+      right 0
+      bottom 0
+      background-color #ccc
+      transition .4s
+      &:before
+        position absolute
+        content ""
+        height 26px
+        width 26px
+        left 4px
+        bottom 4px
+        background-color white
+        transition .4s
+    input:checked + .slider
+      background-color #e02e2e
+    input:focus + .slider
+      box-shadow 0 0 1px #e02e2e
+    input:checked + .slider:before
+      transform translateX(26px)
+    .slider.round
+      border-radius 34px
+      &:before
+        border-radius 50%
+  .connections
+    padding 0   
+    margin-top 20px
+    border-top 1px solid #cccccc
+    li
+      list-style none
+      border-bottom 1px solid #cccccc
+      padding 15px 0
+      background #fff
+      a
+        text-decoration none
+      .profile-link
+        float left
+        width 50%
+        color #000000
+        font-size 26px
+      .notiflink
+        float right
+        width 50%        
+        margin-top 10px
+      .icon
+        font-size 42px
+        float left
+        margin-right 10px
+      i.icon.icon-chevron-right
+        font-size 16px
+        color #c3c3c3
+        float right
+  .setting-detail
+    background-color #fff
+    border-top 1px solid #c8c8c8
+    border-bottom 1px solid #c8c8c8
+    padding 20px 0
+    h4
+      color #343434
+      font-size 24px
+    p
+      color #878787
+  .setting-blob
+    padding 20px 0
+    p
+      color #878787
+      font-size 18px
+  h3
+    padding 0 15px
+// manage connections
+.connections-page
+  background #f9f9f9
+  h3
+    padding 0 15px
+  .switch
+    position relative
+    display inline-block
+    width 60px
+    height 34px
+    float right
+    margin 0 auto
+    display block
+    input
+      display none
+    .slider
+      position absolute
+      cursor pointer
+      top 0
+      left 0
+      right 0
+      bottom 0
+      background-color #ccc
+      transition .4s
+      &:before
+        position absolute
+        content ""
+        height 26px
+        width 26px
+        left 4px
+        bottom 4px
+        background-color white
+        transition .4s
+    input:checked + .slider
+      background-color #e02e2e
+    input:focus + .slider
+      box-shadow 0 0 1px #e02e2e
+    input:checked + .slider:before
+      transform translateX(26px)
+    .slider.round
+      border-radius 34px
+      &:before
+        border-radius 50%
+  .connections
+    padding 0   
+    margin-top 20px
+    border-top 1px solid #cccccc
+    li
+      list-style none
+      border-bottom 1px solid #cccccc
+      padding 15px 0
+      background #fff
+      a
+        text-decoration none
+      .profile-link
+        float left
+        width 50%
+        color #000000
+        font-size 26px
+      .notiflink
+        float right
+        width 50%        
+        margin-top 10px
+      .icon
+        font-size 42px
+        float left
+        margin-right 10px
+      i.icon.icon-chevron-right
+        font-size 16px
+        color #c3c3c3
+        float right
